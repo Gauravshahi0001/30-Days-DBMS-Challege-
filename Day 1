@@ -1,0 +1,96 @@
+# 📘 DBMS Quick Revision Notes
+
+## 🔹 Data vs Information
+- Data → Raw facts (numbers, text)
+- Information → Processed, meaningful data
+
+---
+
+## 🔹 Types of Data
+- Structured → Tables (SQL)
+- Unstructured → Images, videos
+- Semi-structured → JSON, XML
+
+---
+
+## 🔹 Database
+- Organized collection of data stored electronically
+
+---
+
+## 🔹 DBMS (Database Management System)
+- Software to store, retrieve, and manage data
+
+Examples: MySQL, PostgreSQL, Oracle
+
+---
+
+## 🔹 Components of DBMS
+- Hardware
+- Software
+- Data
+- Procedures
+- Users
+- Database Access Language
+
+---
+
+## 🔹 View of Data (3 Levels)
+1. Physical Level → How data is stored
+2. Logical Level → What data is stored
+3. View Level → User-specific view
+
+---
+
+## 🔹 Data Abstraction
+- Hides complexity of data
+- Levels: Physical → Logical → View
+
+---
+
+## 🔹 Instance vs Schema
+- Instance → Current data in database (changes frequently)
+- Schema → Structure/design of database (rarely changes)
+
+---
+
+## 🔹 Data Models
+- Hierarchical Model
+- Network Model
+- Relational Model
+- ER Model
+
+---
+
+## 🔹 Database Languages
+- DDL → CREATE, ALTER, DROP
+- DML → INSERT, UPDATE, DELETE
+- DCL → GRANT, REVOKE
+
+---
+
+## 🔹 Applications of DBMS
+- Banking
+- E-commerce
+- Airlines
+- Education
+- Healthcare
+
+---
+
+## 🔹 ER Model (Entity-Relationship Model)
+- Entity → Object (Student, Employee)
+- Attribute → Property (Name, Age)
+- Relationship → Connection between entities
+
+---
+
+## 🔹 DBMS Architecture
+- 1-tier → Direct database access
+- 2-tier → Client–Server
+- 3-tier → Client → Application → Database
+
+---
+
+## ⚡ Summary
+DBMS helps in efficient storage, retrieval, and management of data using abstraction and structured models.
