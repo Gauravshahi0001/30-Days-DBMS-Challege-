@@ -95,10 +95,3 @@ Constraints ensure **accuracy, consistency, and reliability** of data.
 * Explored how **keys and constraints** ensure data integrity and prevent redundancy
 * Built a solid foundation for **query optimization and database design**
 
----
-
-## 🚀 Next Steps
-
-* Deep dive into **Joins & Nested Queries**
-* Practice **Normalization**
-* Explore **Indexing & Query Optimization**
