@@ -1,0 +1,104 @@
+# 📚 DBMS Learning — Core Topics Covered
+
+Today, I focused on strengthening my understanding of fundamental **Database Management System (DBMS)** concepts that form the backbone of real-world data handling and system design.
+
+---
+
+## 🔹 1. Relational Query Language (Relational Algebra)
+
+Relational Algebra is a **procedural query language** and serves as the **mathematical foundation of SQL**. It defines how queries are executed step-by-step.
+
+### Key Operations:
+
+* **Selection (σ)**
+  Filters rows based on a specified condition.
+  *Example:* σ(age > 20)(Student)
+
+* **Projection (Π)**
+  Extracts specific columns from a table.
+  *Example:* Π(name, age)(Student)
+
+* **Set Operations**
+
+  * Union (∪): Combines results from two relations
+  * Intersection (∩): Returns common records
+  * Difference (−): Returns records present in one but not the other
+
+* **Cartesian Product (×)**
+  Combines every row of one table with every row of another table.
+
+---
+
+## 🔹 2. SQL Sub-Languages
+
+SQL is divided into categories based on functionality:
+
+### 📌 DDL (Data Definition Language)
+
+Defines and modifies database structure
+**Commands:** CREATE, ALTER, DROP, TRUNCATE
+
+### 📌 DML (Data Manipulation Language)
+
+Used to manipulate data inside tables
+**Commands:** INSERT, UPDATE, DELETE, SELECT
+
+### 📌 DCL (Data Control Language)
+
+Handles permissions and access control
+**Commands:** GRANT, REVOKE
+
+### 📌 TCL (Transaction Control Language)
+
+Manages transactions and ensures consistency
+**Commands:** COMMIT, ROLLBACK, SAVEPOINT
+
+---
+
+## 🔹 3. Database Keys
+
+Keys are essential for **uniquely identifying records** and maintaining relationships between tables.
+
+* **Primary Key**
+  Unique and NOT NULL identifier for each record
+
+* **Candidate Key**
+  Minimal set of attributes that can uniquely identify a tuple
+
+* **Foreign Key**
+  Establishes relationship between tables and ensures referential integrity
+
+* **Super Key**
+  Any set of attributes that uniquely identifies a record
+
+---
+
+## 🔹 4. Integrity Constraints
+
+Constraints ensure **accuracy, consistency, and reliability** of data.
+
+* **Entity Integrity**
+  Primary key must be unique and never NULL
+
+* **Referential Integrity**
+  Foreign key must match an existing primary key in the referenced table
+
+* **Domain Integrity**
+  Data must follow valid types, formats, and ranges
+
+---
+
+## 🛠️ Summary of Learning
+
+* Gained a strong understanding of how **Relational Algebra maps to SQL queries**
+* Practiced defining schemas using **DDL** and manipulating data using **DML**
+* Explored how **keys and constraints** ensure data integrity and prevent redundancy
+* Built a solid foundation for **query optimization and database design**
+
+---
+
+## 🚀 Next Steps
+
+* Deep dive into **Joins & Nested Queries**
+* Practice **Normalization**
+* Explore **Indexing & Query Optimization**
