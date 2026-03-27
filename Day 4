@@ -1,0 +1,43 @@
+1. Aggregate Functions
+These functions perform a calculation on a set of values and return a single value:
+
+COUNT(): Returns the number of rows.
+
+SUM(): Calculates the total sum of a numeric column.
+
+AVG(): Calculates the average value.
+
+MIN() / MAX(): Finds the lowest and highest values in a column.
+
+2. Grouping Data
+GROUP BY: Groups rows that have the same values into summary rows (e.g., "find the total salary per department").
+
+HAVING: Similar to WHERE, but used to filter groups after the aggregations are calculated.
+
+💻 Code Samples
+📊 Basic Aggregations
+SQL
+-- Finding total number of employees and their average salary
+SELECT 
+    COUNT(employee_id) AS total_staff,
+    AVG(salary) AS average_salary,
+    MAX(salary) AS highest_pay
+FROM Employees;
+📂 Grouping and Filtering Groups
+SQL
+-- Counting employees in each department
+SELECT department, COUNT(*) as staff_count
+FROM Employees
+GROUP BY department;
+
+-- Finding departments where the total salary expense is over $200,000
+SELECT department, SUM(salary) as total_budget
+FROM Employees
+GROUP BY department
+HAVING SUM(salary) > 200000;
+🧠 What I Learned Today
+WHERE vs. HAVING: This was a major "aha!" moment. WHERE filters individual rows before grouping, while HAVING filters the results after the grouping is done.
+
+Aliasing: Using AS makes the output much more readable, especially when performing calculations.
+
+NULL Handling: I discovered that aggregate functions (like AVG or COUNT) often ignore NULL values, which can change the result of your analysis if you aren't careful.
