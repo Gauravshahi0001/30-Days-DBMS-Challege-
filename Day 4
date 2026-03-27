@@ -30,3 +30,14 @@ SELECT department, COUNT(*) as staff_count
 FROM Employees
 GROUP BY department;
 
+-- Finding departments where the total salary expense is over $200,000
+SELECT department, SUM(salary) as total_budget
+FROM Employees
+GROUP BY department
+HAVING SUM(salary) > 200000;
+🧠 What I Learned Today
+WHERE vs. HAVING: This was a major "aha!" moment. WHERE filters individual rows before grouping, while HAVING filters the results after the grouping is done.
+
+Aliasing: Using AS makes the output much more readable, especially when performing calculations.
+
+NULL Handling: I discovered that aggregate functions (like AVG or COUNT) often ignore NULL values, which can change the result of your analysis if you aren't careful.
